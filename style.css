@@ -1,0 +1,207 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --color-base-rose: #B52184;
+  --color-base-blue: #312D64;
+  --color-base-bg-one: #F9F4FB;
+  --color-base-bg-two: linear-gradient(96deg, #343193 0%, #302C63 99.68%);
+  --color-base-bg-three: #fff;
+}
+
+html, body, input, textarea {
+  font-family: 'Mulish', sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+#app {
+  max-width: 43rem;
+  margin: 0 auto;
+}
+
+.header {
+  background: var(--color-base-bg-one);
+  padding-bottom: 9.2rem;
+}
+
+.header h1 {
+  color: var(--color-base-rose);
+  font-size: 3.2rem;
+  font-weight: 900;
+
+  padding-top: 1.6rem;
+}
+
+p {
+  color: var(--color-base-blue);
+}
+
+.header p {
+  font-size: 2rem;
+  padding-bottom: 3.2rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem;
+  background: var(--color-base-blue);
+  padding: 4.8rem 4rem;
+}
+
+.container {
+  background: var(--color-base-bg-three);
+  max-width: 100%;
+  text-align: start;
+
+  border-radius: 2rem;
+  padding: 2.8rem;
+}
+
+.container h2 {
+  font-size: 2.8rem;
+  color: var(--color-base-rose);
+  font-weight: 900;
+
+  padding-bottom: 1rem;
+}
+
+.container img {
+  padding-bottom: 2rem;
+}
+
+.container p {
+  font-weight: 600;
+  max-width: 26.5rem;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  background: var(--color-base-bg-one);
+  padding: 7.2rem 4rem;
+
+  text-align: start;
+}
+
+.contact input, textarea {
+  width: 100%;
+  margin-bottom: 2.4rem;
+
+  border-radius: 1.6rem;
+  border: 1.5px solid var(--color-base-blue);
+
+  padding: 1.2rem 1.6rem 1.2rem 1.4rem;
+
+  color: var(--color-base-blue);
+}
+
+.contact textarea {
+  height: 12.6rem;
+}
+
+.contact h2 {
+  color: var(--color-base-rose);
+  font-size: 3.2rem;
+  font-weight: 900;
+  padding-bottom: 4rem;
+}
+
+form button {
+  border: none;
+  border-radius: 1.6rem;
+
+  color: var(--color-base-bg-three);
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+
+  background: var(--color-base-bg-two);
+
+  padding: 1.6rem;
+}
+
+.bg-star {
+  background: url(./assets/estrelinhas.png) no-repeat;
+  display: none;
+}
+
+footer {
+  background: var(--color-base-bg-two);
+
+  padding: 1.6rem;
+
+  color: var(--color-base-bg-three);
+  font-size: 1.8rem;
+}
+
+@media (min-width: 1100px) {
+  #app {
+    max-width: 100%;
+  }
+  
+  .header {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+
+    max-height: 100vh;
+  }
+
+  .image img {
+    width: 50rem;
+    height: 51.3rem;
+  }
+
+  .header h1 {
+    font-size: 5rem;
+
+    padding-top: 0;
+    margin-top: 15rem;
+  }
+
+  .header p {
+    font-size: 2.9rem;
+    text-align: start;
+    padding-bottom: 14rem;
+  }
+
+  .text img {
+    float: left;
+    max-width: 5rem;
+  }
+
+  main {
+    flex-direction: row;
+    justify-content: center;
+    gap: 6rem;
+  }
+
+  .contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 9.2rem;
+
+    padding: 0;
+  }
+
+  form {
+    padding: 9.5rem 0 9.5rem 11rem ;
+  }
+
+  .bg-star {
+    display: block;
+  }
+
+}
